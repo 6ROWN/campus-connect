@@ -1,0 +1,179 @@
+//container
+.container{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0rem 2rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+
+}
+
+
+//Text styles
+.x-large{
+    font-size: 4rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.large{
+    font-size: 3rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.text-primary{
+    color: $primary-color;
+}
+
+.lead{
+    font-size: 1.5rem;
+    margin-bottom: 1rem
+}
+
+.line{
+    height: 1px;
+    background: #ccc;
+    margin: 1rem 0
+}
+
+//Backgrounds
+.bg{
+
+    &-primary{
+        @include set-background($primary-color);
+    }
+    &-light{
+        @include set-background($light-color);
+        border: 1px solid #ccc;
+    }
+
+    &-dark{
+        @include set-background($dark-color);
+
+    }
+
+    &-success{
+        @include set-background($success-color);
+    }
+
+    &-danger{
+        @include set-background($danger-color);
+    }
+    
+    &-white{
+        @include set-background(#fff);
+        border: 1px solid #ccc;
+    }
+    
+}
+
+//buttons
+.btn{
+    display: inline-block;
+    background: $light-color;
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    outline: none;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease-in;
+
+    &-primary{
+        @include set-background($primary-color);
+        
+        &:hover{
+            background: lighten($primary-color, 5%);
+        }
+    }
+
+    &-dark{
+        @include set-background($dark-color);
+        
+        &:hover{
+            background: lighten($dark-color, 5%);
+        }
+    }
+
+    &-success{
+        @include set-background($success-color);
+        
+        &:hover{
+            background: lighten($success-color, 5%);
+        }
+    }
+
+    &-danger{
+        @include set-background($danger-color);
+        
+        &:hover{
+            background: lighten($danger-color, 5%);
+        }
+    }
+
+    &-light{
+        @include set-background($light-color);
+        
+        &:hover{
+            background: lighten($dark-color, 20%);
+            color: white;
+        }
+    }
+}
+
+.dark-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+//Alert
+.alert{
+    padding: 0.8rem;
+    //margin: 1rem 0;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    background: $light-color;
+    color: #333;
+    width: 100%;
+
+    &-primary{
+        @include set-background($primary-color);
+    }
+
+    &-dark{
+        @include set-background($dark-color);
+    }
+
+    &-danger{
+        @include set-background($danger-color);
+    }
+
+    &-success{
+        @include set-background($success-color);
+    }
+
+}
+
+//tables
+.table {
+    th,td{
+        padding: 1rem;
+        text-align: left ;
+    }
+
+    th{
+        background:$light-color;
+
+        &:last-child{
+            background: none;
+        }
+    }
+
+}

@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42658a6db6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="#!">
+                <i class="fab fa-connectdevelop"> Campus Connect</i>
+            </a>
+        </h1>
+
+        <ul class="menu-nav">
+            <div class=" menu-icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li class="nav-items"><a href="#"> Home </a></li>
+            <li class="nav-items"><a href="post.html"> Post </a></li>
+            <li class="nav-items"><a href="dashboard.html"> <i class="fas fa-user"></i> <span class="hide-on-sm">Dashbord</span></a></li>
+            <li class="nav-items"><a href="login.html"> <i class="fas fa-sign-out-alt"></i> <span class="hide-on-sm">Logout</span></a></li>
+        </ul>
+        <div class=" menu-icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h1 class="text-primary">
+            Dashboard
+        </h1>
+        <p class="lead"><i class="fas fa-user"> Welcome, Corey Brown</i></p>
+        <div class="dash-buttons">
+            <a href="create_profile.html" class="btn"> 
+                <i class="fas fa-user-circle text-primary"></i> Edit Profile
+            </a>
+            <a href="add_experience.html" class="btn"> 
+                <i class="fab fa-black-tie text-primary"></i> Add Experience
+            </a>
+            <a href="add_education.html" class="btn"> 
+                <i class="fas fa-graduation-cap text-primary"></i> Add Education
+            </a>
+        </div>
+
+        <h2 class="my-2">
+            Experience Credentials
+        </h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th class="hide-on-sm">Title</th>
+                    <th class="hide-on-sm">Years</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Corey Media</td>
+                    <td class="hide-on-sm"> FrontEnd Developer</td>
+                    <td class="hide-on-sm">02 Oct 2012 - Current</td>
+                    <td>
+                        <button class="btn btn-danger"> Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Crick IT Solutions</td>
+                    <td class="hide-on-sm"> FrontEnd Developer</td>
+                    <td class="hide-on-sm">02 Oct 2012 - Current</td>
+                    <td>
+                        <button class="btn btn-danger"> Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="my-2">
+            Education Credentials
+        </h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th class="hide-on-sm">Degree</th>
+                    <th class="hide-on-sm">Programme</th>
+                    <th class="hide-on-sm">Level</th> 
+                    <th class="hide-on-sm">Years</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> University of Health and Allied Sciences</td>
+                    <td> Bachelors</td>
+                    <td class="hide-on-sm"> Computer Science</td>
+                    <td class="hide-on-sm"> 300</td>
+                    <td class="hide-on-sm">02 Oct 2015 - Current</td>
+                    <td>
+                        <button class="btn btn-danger"> Delete</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> Keta Senior High</td>
+                    <td> WASSCE</td>
+                    <td class="hide-on-sm"> General Science</td>
+                    <td class="hide-on-sm"> Completed</td>
+                    <td class="hide-on-sm"> Oct 2012 - April 2015</td>
+                    <td>
+                        <button class="btn btn-danger"> Delete</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> Corey Int. Basic School</td>
+                    <td> BECE</td>
+                    <td class="hide-on-sm"> Basic Programme</td>
+                    <td class="hide-on-sm"> Completed</td>
+                    <td class="hide-on-sm">Oct 2009-2012</td>
+                    <td>
+                        <button class="btn btn-danger"> Delete</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <div class="my-2">
+            <button class="btn btn-danger">
+                <i class="fas fa-user-minus"> Delete my account</i>
+            </button>
+            <small class="form-text"> Note that this action connot be reversed</small>
+        </div>
+
+    </section>
+
+    <!--js-->
+    <script src="./js/main.js">
+
+    </script>
+    
+</body>
+</html>

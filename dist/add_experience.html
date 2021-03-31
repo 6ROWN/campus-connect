@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42658a6db6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="#!">
+                <i class="fab fa-connectdevelop"> Campus Connect</i>
+            </a>
+        </h1>
+
+        <ul class="menu-nav">
+            <div class=" menu-icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li class="nav-items"><a href="#"> Home </a></li>
+            <li class="nav-items"><a href="post.html"> Post </a></li>
+            <li class="nav-items"><a href="dashboard.html"> <i class="fas fa-user"></i> <span class="hide-on-sm">Dashbord</span></a></li>
+            <li class="nav-items"><a href="login.html"> <i class="fas fa-sign-out-alt"></i> <span class="hide-on-sm">Logout</span></a></li>
+        </ul>
+        <div class=" menu-icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+
+
+    <section class="container">
+        <h1 class="large text-primary">
+            Add An Experience
+        </h1>
+        <p class="lead">
+        <i class="fas fa-code-branch"></i> Add any experience you have on the job front (Intenship)
+        </p>
+        <small>* = required field</small>
+        <form class="form">
+        <div class="form-group">
+            <input type="text" placeholder="* Job Title" name="title" required />
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="* Company" name="company" required />
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Location" name="location" />
+        </div>
+        <div class="form-group">
+            <h4>From Date</h4>
+            <input type="date" name="from" />
+        </div>
+        <div class="form-group">
+            <h4>To Date</h4>
+            <input type="date" name="to" />
+        </div>
+        <div class="form-group">
+            <p><input type="checkbox" name="current" value="" /> Current Job</p>
+        </div>
+        <div class="form-group">
+            <textarea
+            name="description"
+            cols="30"
+            rows="5"
+            placeholder="Job Description"
+            ></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary my-1" />
+        <a class="btn my-1" href="dashboard.html">Go Back</a>
+        </form>
+    
+    </section>
+
+    <!--js-->
+    <script src="./js/main.js">
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+.form{
+
+    &-group{
+        margin: 1.2rem 0;
+    }
+
+    &-text{
+        display: block;
+        margin-top: 0.3rem;
+        color: #888;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="email"],
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 0.5rem ;
+        font-size: 1.2rem;
+        border: 1px solid #ccc;
+    }
+
+    input[type="submit"]{
+        font: inherit;
+    }
+}
